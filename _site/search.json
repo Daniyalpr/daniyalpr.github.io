@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "I write about math problems and topics I find interesting. Below are the latest posts.\n\n\n\n\n\n\n\n\n\nAM-GM for two variables\n\n\n\ninequalities\n\neasy\n\n\n\n\n\n\nNov 8, 2026\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "problems/am-gm.html",
+    "href": "problems/am-gm.html",
+    "title": "AM-GM for two variables",
+    "section": "",
+    "text": "Theorem 1 (AM-GM) For a, b \\ge 0, \\dfrac{a+b}{2} \\ge \\sqrt{ab}.\n\n\n\n\n\n\n\nNoteSolution\n\n\n\n\n\nSince (\\sqrt a - \\sqrt b)^2 \\ge 0, expanding gives a + b \\ge 2\\sqrt{ab}. \\square"
+  }
+]

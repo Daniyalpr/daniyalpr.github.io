@@ -1,0 +1,11 @@
+---
+title: "Welcome"
+listing:
+  contents: [problems, topics]
+  sort: "date desc"
+  max-items: 8
+  fields: [title, date, categories]
+---
+
+I write about math problems and topics I find interesting.
+Below are the latest posts.
