@@ -4,7 +4,21 @@
     "href": "index.html",
     "title": "Welcome",
     "section": "",
-    "text": "I write about math problems and topics I find interesting. Below are the latest posts.\n\n\n\n\n\n\n\n\n\nAM-GM for two variables\n\n\n\ninequalities\n\neasy\n\n\n\n\n\n\nNov 8, 2026\n\n\n\n\n\n\n\nLinear Algebra problem 1\n\n\n\nmedium, Linear Algebra\n\n\n\n\n\n\nNov 8, 2026\n\n\n\n\n\nNo matching items"
+    "text": "I write about math problems and topics I find interesting. Below are the latest posts.\n\n\n\n\n\n\n\n\n\nProblem\n\n\n\nProbability\n\nmedium\n\n\n\n\n\n\n\n\n\n\nAM-GM for two variables\n\n\n\ninequalities\n\neasy\n\n\n\n\n\n\nNov 8, 2026\n\n\n\n\n\n\n\nLA P2\n\n\n\nLinear Algebra\n\nMedium\n\n\n\n\n\n\nNov 8, 2026\n\n\n\n\n\n\n\nMy new problem\n\n\n\ninequalities\n\nhard\n\n\n\n\n\n\nNov 8, 2026\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "problems/PR1.html",
+    "href": "problems/PR1.html",
+    "title": "Your Site Name",
+    "section": "",
+    "text": "Prove that distributation function is right continuous"
+  },
+  {
+    "objectID": "problems/PR1.html#problem",
+    "href": "problems/PR1.html#problem",
+    "title": "Your Site Name",
+    "section": "",
+    "text": "Prove that distributation function is right continuous"
   },
   {
     "objectID": "problems/am-gm.html",
@@ -14,16 +28,30 @@
     "text": "Theorem 1 (AM-GM) For a, b \\ge 0, \\dfrac{a+b}{2} \\ge \\sqrt{ab}.\n\n\n\n\n\n\n\nNoteSolution\n\n\n\n\n\nSince (\\sqrt a - \\sqrt b)^2 \\ge 0, expanding gives a + b \\ge 2\\sqrt{ab}. \\square"
   },
   {
+    "objectID": "problems/LA2.html",
+    "href": "problems/LA2.html",
+    "title": "LA P2",
+    "section": "",
+    "text": "Suppose V is finite dimensional vector space and T: V -&gt; V is a linear map such that {v, T(v), ..., T^{(n-1)}(v)} is a basis for V. If S: V -&gt; V is a linear transformation such that ST = TS, prove that S(x) = a_0I + a_1T(x) + ... + a_nT^{(n-1)}(x) for some a_i\n\n\n\n\n\n\nNoteSolution\n\n\n\n\n\nSuppose S(v) = a_0 v + a_1 T(v) + ... + a_n T(v)^{(n-1)} we claim that the a_i satisfy S(x) = a_0 v + a_1 T(x) + ... + a_n T(x)^{(n-1)}. Let P(x) = S(x) = a_0 v + a_1 T(x) + ... + a_n T(x)^{(n-1)}. By definition of a_i, we have P(v) = S(v). Because ST = TS, we obtain that ST^k = T^kS. Also because P is a polynomial of T, thus PT^k = T^KP. Thus we have P(T^k(v)) = T^k(P(V)) = T^k(S(v)) = S(T^k(v)). Because {v, Tv, T^2v, ..., T^{(n-1)v}} is a basis for V and P and S have the same outputs, thus S = P."
+  },
+  {
+    "objectID": "problems/LA2.html#problem",
+    "href": "problems/LA2.html#problem",
+    "title": "LA P2",
+    "section": "",
+    "text": "Suppose V is finite dimensional vector space and T: V -&gt; V is a linear map such that {v, T(v), ..., T^{(n-1)}(v)} is a basis for V. If S: V -&gt; V is a linear transformation such that ST = TS, prove that S(x) = a_0I + a_1T(x) + ... + a_nT^{(n-1)}(x) for some a_i\n\n\n\n\n\n\nNoteSolution\n\n\n\n\n\nSuppose S(v) = a_0 v + a_1 T(v) + ... + a_n T(v)^{(n-1)} we claim that the a_i satisfy S(x) = a_0 v + a_1 T(x) + ... + a_n T(x)^{(n-1)}. Let P(x) = S(x) = a_0 v + a_1 T(x) + ... + a_n T(x)^{(n-1)}. By definition of a_i, we have P(v) = S(v). Because ST = TS, we obtain that ST^k = T^kS. Also because P is a polynomial of T, thus PT^k = T^KP. Thus we have P(T^k(v)) = T^k(P(V)) = T^k(S(v)) = S(T^k(v)). Because {v, Tv, T^2v, ..., T^{(n-1)v}} is a basis for V and P and S have the same outputs, thus S = P."
+  },
+  {
     "objectID": "problems/LA1.html",
     "href": "problems/LA1.html",
-    "title": "Linear Algebra problem 1",
+    "title": "My new problem",
     "section": "",
     "text": "Suppose V is a finite dimensional vector space and T: V -&gt; V is a linear transformation such that T^2(v) = -v. Prove that dim(V) is even."
   },
   {
     "objectID": "problems/LA1.html#problem",
     "href": "problems/LA1.html#problem",
-    "title": "Linear Algebra problem 1",
+    "title": "My new problem",
     "section": "",
     "text": "Suppose V is a finite dimensional vector space and T: V -&gt; V is a linear transformation such that T^2(v) = -v. Prove that dim(V) is even."
   }

@@ -2,7 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
+      "/problems/PR1.html",
       "/problems/am-gm.html",
+      "/problems/LA2.html",
       "/problems/LA1.html"
     ]
   }
