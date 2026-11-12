@@ -1,0 +1,153 @@
+/*-- scss:defaults --*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap');
+
+$purple: #6C4DFF;
+$coral:  #FF6B6B;
+$sun:    #FFC93C;
+$mint:   #1FB5A5;
+$sky:    #3FA9F5;
+$ink:    #2B2D42;
+$cream:  #FFF9F0;
+
+$font-family-sans-serif: "Nunito", system-ui, -apple-system, sans-serif;
+$headings-font-family: "Fredoka", "Nunito", sans-serif;
+$font-size-root: 18px;
+$line-height-base: 1.7;
+
+$body-bg: $cream;
+$body-color: $ink;
+$link-color: $purple;
+$link-hover-color: $coral;
+$primary: $purple;
+$secondary: $mint;
+$success: $mint;
+$info: $sky;
+$warning: $sun;
+$danger: $coral;
+
+$navbar-bg: $purple;
+$navbar-fg: #ffffff;
+$navbar-hl: $sun;
+$footer-bg: #ffffff;
+
+/*-- scss:rules --*/
+
+h1, h2, h3, h4 { font-weight: 600; letter-spacing: 0.2px; }
+h1.title { color: $purple; font-weight: 700; }
+h2 {
+  color: $purple;
+  border-bottom: 4px dotted lighten($sun, 10%);
+  padding-bottom: 0.2em;
+}
+h3 { color: $coral; }
+h4 { color: $mint; }
+
+.navbar { box-shadow: 0 4px 0 $sun; }
+.navbar-brand, .navbar .nav-link { font-family: $headings-font-family; font-weight: 500; }
+.navbar .nav-link:hover { color: $sun !important; }
+
+a { font-weight: 700; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+
+/* ---------- Hero ---------- */
+.hero {
+  background: linear-gradient(135deg, $purple 0%, $sky 100%);
+  color: #fff;
+  border-radius: 28px;
+  padding: 2.2rem 2rem;
+  margin: 1rem 0 2rem;
+  box-shadow: 0 8px 0 darken($purple, 12%);
+  position: relative;
+  overflow: hidden;
+}
+.hero h2, .hero p, .hero a { color: #fff; border: none; margin: 0.3rem 0; }
+.hero h2 { font-size: 2.1rem; }
+.hero::after {
+  content: "∑ π ∞ √ ∫";
+  position: absolute; right: 1.2rem; bottom: 0.4rem;
+  font-family: $headings-font-family; font-size: 2.4rem; opacity: 0.25;
+}
+
+/* ---------- Cards & buttons ---------- */
+.card-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1.1rem;
+  margin: 1.5rem 0 2.5rem;
+}
+.fun-card {
+  background: #fff;
+  border-radius: 22px;
+  padding: 1.2rem 1.3rem;
+  border: 3px solid $ink;
+  box-shadow: 5px 5px 0 $ink;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.fun-card:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 $ink; }
+.fun-card h3 { margin-top: 0; }
+.fun-card.purple { background: lighten($purple, 38%); }
+.fun-card.coral  { background: lighten($coral, 28%); }
+.fun-card.mint   { background: lighten($mint, 50%); }
+.fun-card.sun    { background: lighten($sun, 30%); }
+
+.btn-fun {
+  display: inline-block;
+  background: $sun; color: $ink !important;
+  font-family: $headings-font-family; font-weight: 600;
+  padding: 0.45rem 1.2rem; border-radius: 999px;
+  border: 3px solid $ink; box-shadow: 3px 3px 0 $ink;
+  text-decoration: none; margin-top: 0.6rem;
+}
+.btn-fun:hover { background: $coral; color: #fff !important; }
+
+/* ---------- Listings ---------- */
+.quarto-listing-default .list.quarto-listing-default > .quarto-post,
+.quarto-post {
+  background: #fff;
+  border-radius: 20px;
+  border: 3px solid $ink;
+  box-shadow: 4px 4px 0 $ink;
+  padding: 1rem 1.3rem;
+  margin-bottom: 1.2rem;
+}
+.quarto-post .listing-title { font-family: $headings-font-family; font-size: 1.35rem; color: $purple; }
+.quarto-post .listing-date { color: lighten($ink, 30%); font-weight: 700; }
+.quarto-post:nth-of-type(4n+1) { background: lighten($purple, 40%); }
+.quarto-post:nth-of-type(4n+2) { background: lighten($sun, 32%); }
+.quarto-post:nth-of-type(4n+3) { background: lighten($mint, 52%); }
+.quarto-post:nth-of-type(4n+4) { background: lighten($coral, 30%); }
+
+.listing-category, .quarto-category {
+  background: $purple; color: #fff !important;
+  border-radius: 999px; padding: 0.1rem 0.8rem;
+  font-weight: 700; font-size: 0.8rem; border: none;
+}
+.listing-category:nth-child(3n+2) { background: $coral; }
+.listing-category:nth-child(3n+3) { background: $mint; }
+
+/* ---------- Math ---------- */
+.math.display { overflow-x: auto; overflow-y: hidden; padding: 0.4rem 0; }
+mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; }
+
+/* Theorem-style blocks */
+.theorem, .lemma, .corollary, .proposition, .definition, .example, .exercise, .proof, .remark {
+  background: #fff;
+  border-left: 8px solid $purple;
+  border-radius: 14px;
+  padding: 0.8rem 1.2rem;
+  margin: 1.2rem 0;
+  box-shadow: 3px 3px 0 rgba($ink, 0.15);
+}
+.definition, .example { border-left-color: $mint; }
+.exercise, .remark { border-left-color: $sun; }
+.proof { border-left-color: $coral; }
+
+/* ---------- Callouts, code, images ---------- */
+.callout { border-radius: 16px !important; overflow: hidden; }
+pre, div.sourceCode { border-radius: 14px; }
+img { border-radius: 16px; }
+blockquote {
+  border-left: 6px solid $sun; background: lighten($sun, 34%);
+  padding: 0.6rem 1.2rem; border-radius: 0 14px 14px 0;
+}
+
+.nav-footer { font-family: $headings-font-family; }

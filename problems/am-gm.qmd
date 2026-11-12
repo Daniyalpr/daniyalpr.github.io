@@ -1,0 +1,15 @@
+---
+title: "AM-GM for two variables"
+date: 2026-11-08
+categories: [inequalities, easy]
+---
+
+::: {#thm-amgm}
+## AM-GM
+For $a, b \ge 0$, $\dfrac{a+b}{2} \ge \sqrt{ab}$.
+:::
+
+::: {.callout-note collapse="true"}
+## Solution
+Since $(\sqrt a - \sqrt b)^2 \ge 0$, expanding gives $a + b \ge 2\sqrt{ab}$. $\square$
+:::

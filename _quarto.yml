@@ -1,0 +1,32 @@
+project:
+  type: website
+
+website:
+  title: "Math Playground"
+  favicon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧮</text></svg>"
+  search: true
+  navbar:
+    background: primary
+    left:
+      - href: index.qmd
+        text: "🏠 Home"
+      - href: problems.qmd
+        text: "🧩 Problems"
+      - href: topics.qmd
+        text: "📚 Topics"
+      - href: about.qmd
+        text: "👋 About"
+    tools:
+      - icon: github
+        href: https://github.com/daniyalpr
+  page-footer:
+    center: "Made with 💜, coffee and Quarto"
+
+format:
+  html:
+    theme: [cosmo, custom.scss]
+    toc: true
+    smooth-scroll: true
+    code-copy: true
+    html-math-method: mathjax
+    link-external-newwindow: true

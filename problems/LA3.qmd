@@ -1,0 +1,23 @@
+--- 
+title: "LA3"
+date: 2026-11-12
+categories: [hard, Linear Algebra]
+--- 
+## Problem
+Suppose V is a vector space such that $dim(V) >= 2$. If $F$ is infinite prove that V can not be 
+union of finitely many proper subspaces.
+
+::: {.callout-note collapse="true"}
+## Solution
+Suppose for the sake of contradiction that V can be written as union of finitely many proper subspaces.
+Then V we can remove the subspaces that are subsets of each other and conclude that V can be writter as:
+$V = U_1 \cup U_2 \cup ... \cup U_k$ where $U_i \nsubseteq \bigcup_{j \neq i} U_j$ for all i, where $U_i$ are proper
+subspaces of V. Choose $u \in U_1$ s.t $u \notin \bigcup_{i=2}^{k}U_i$. Because $U_1$ is proper subspace of V, there exist
+some $v \in V-U_1$. Consider the vectors $u+tv$ where $t \in F$. if $t \neq 0$ then $u+tv \notin U_1$. We claim that 
+for all $U_i, i>1$, at most one of the vectors $u+tv$ are in $U_i$. Suppose for the sake of contradiction that $u+t_1v, u+t_2v \in U_i$.
+Then:
+$(t_1-t_2)v \in U_i \implies v \in U_i \implies u \in U_i$
+which is a contradiction. Because there are finitely many $u+tv$ in $U_1 \cup U_2 \cup ... \cup U_k$
+but the number of vectors in the form $u+tv$ is infinite, thus there exists some $u+t^*v \notin U_1 \cup U_2 \cup ... \cup U_k = V$ 
+which is a contradiction
+:::

@@ -1,0 +1,8 @@
+--- 
+title: "Prove that distributation function is right continuous"
+date: 2026-11-12
+categories: [Probability, medium]
+---
+## Problem
+Prove that distributation function is right continuous
+

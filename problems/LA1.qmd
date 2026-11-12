@@ -1,0 +1,8 @@
+---
+title: "My new problem"
+date: 2026-11-08
+categories: [inequalities, hard]
+---
+## problem
+Suppose V is a finite dimensional vector space and $T: V -> V$ is a linear transformation such that $T^2(v) = -v$.
+Prove that dim(V) is even.

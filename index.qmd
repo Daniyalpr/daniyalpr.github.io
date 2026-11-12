@@ -1,0 +1,39 @@
+---
+title: "Welcome"
+listing:
+  contents: [problems, topics]
+  type: default
+  sort: "date desc"
+  max-items: 8
+  fields: [title, date, categories]
+---
+
+::: hero
+## Hi, welcome to my math playground! 🎉
+I write about math problems and topics I find interesting.
+:::
+
+::: card-row
+::: {.fun-card .coral}
+### 🧩 Problems
+Puzzles and competition-style problems to chew on.
+
+[Try some](problems.qmd){.btn-fun}
+:::
+
+::: {.fun-card .mint}
+### 📚 Topics
+Friendly explanations of ideas from analysis and beyond.
+
+[Start reading](topics.qmd){.btn-fun}
+:::
+
+::: {.fun-card .sun}
+### 👋 About
+Who is behind all the symbols?
+
+[Say hi](about.qmd){.btn-fun}
+:::
+:::
+
+## ✨ Latest posts

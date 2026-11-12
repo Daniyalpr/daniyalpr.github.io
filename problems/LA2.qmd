@@ -1,0 +1,16 @@
+--- 
+title: "LA P2"
+date: 2026-11-08
+categories: ["Linear Algebra", "Medium"]
+---
+## problem
+Suppose V is finite dimensional vector space and $T: V -> V$ is a linear map such that ${v, T(v), ..., T^{(n-1)}(v)}$ is a basis for V.
+If $S: V -> V$ is a linear transformation such that $ST = TS$, prove that $S(x) = a_0I + a_1T(x) + ... + a_nT^{(n-1)}(x)$ for some $a_i$
+
+::: {.callout-note collapse="true"}
+## Solution
+Suppose $S(v) = a_0 v + a_1 T(v) + ... + a_n T(v)^{(n-1)}$ we claim that the $a_i$ satisfy $S(x) = a_0 v + a_1 T(x) + ... + a_n T(x)^{(n-1)}$.
+Let $P(x) = S(x) = a_0 v + a_1 T(x) + ... + a_n T(x)^{(n-1)}$. By definition of a_i, we have P(v) = S(v). Because ST = TS, we obtain that
+$ST^k = T^kS$. Also because P is a polynomial of T, thus $PT^k = T^KP$. Thus we have $P(T^k(v)) = T^k(P(V)) = T^k(S(v)) = S(T^k(v))$. Because ${v, Tv, T^2v, ..., T^{(n-1)v}}$ is a basis for V and P and S 
+have the same outputs, thus S = P.
+:::

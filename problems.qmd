@@ -1,0 +1,14 @@
+---
+title: "🧩 Problems"
+listing:
+  contents: problems
+  type: default
+  sort: "date desc"
+  categories: true
+  fields: [title, date, categories, description]
+page-layout: full
+---
+
+Grab a pen and some paper. Try each problem before peeking at the solution!
+
+> 💡 Tip: tag problems with categories like `easy`, `medium`, `hard` or `inequalities`, and use the filter chips to browse.

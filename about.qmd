@@ -1,0 +1,35 @@
+---
+title: "👋 About"
+toc: false
+---
+
+::: hero
+## Hello, I'm glad you're here!
+I'm a math student who loves problems, proofs and a good cup of coffee ☕.
+:::
+
+## What is this place?
+
+This is my little corner of the internet where I write down math problems and topics I find interesting, mostly things I'm learning from real analysis and competition math.
+
+::: card-row
+::: {.fun-card .purple}
+### 🎯 Goal
+Understand things deeply, then explain them simply.
+:::
+
+::: {.fun-card .coral}
+### 🛠 Made with
+Quarto, GitHub Pages, LaTeX and a lot of tea and coffee.
+:::
+
+::: {.fun-card .mint}
+### 💌 Find me
+[GitHub](https://github.com/daniyalpr){.btn-fun}
+:::
+:::
+
+::: {.callout-tip}
+## Found a mistake?
+Math is full of sneaky typos. If you spot one, please tell me!
+:::

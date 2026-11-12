@@ -1,0 +1,12 @@
+---
+title: "📚 Topics"
+listing:
+  contents: topics
+  type: default
+  sort: "date desc"
+  categories: true
+  fields: [title, date, categories, description]
+page-layout: full
+---
+
+Ideas I like, explained as clearly (and as colorfully) as I can.

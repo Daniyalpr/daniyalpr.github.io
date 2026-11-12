@@ -1,0 +1,7 @@
+--- 
+title: "No vector space R over Z/2Z"
+date: 2026-11-12
+categories: ["Linear Algebra"]
+--- 
+## Problem
+Prove that there is no vector space $\mathbb{R}$ over the field $\mathbb{Z}/2\mathbb{Z}$
