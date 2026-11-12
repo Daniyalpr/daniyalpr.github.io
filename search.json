@@ -11,35 +11,42 @@
     "href": "problems.html",
     "title": "🧩 Problems",
     "section": "",
-    "text": "Grab a pen and some paper. Try each problem before peeking at the solution!\n\n💡 Tip: tag problems with categories like easy, medium, hard or inequalities, and use the filter chips to browse.\n\n\n\n\n\n\n\n\n\n\nLA3\n\n\n\nhard\n\nLinear Algebra\n\n\n\n\n\n\n\n\n\n\n\nNov 12, 2026\n\n\n\n\n\n\n\nProve that distributation function is right continuous\n\n\n\nProbability\n\nmedium\n\n\n\n\n\n\n\n\n\n\n\nNov 12, 2026\n\n\n\n\n\n\n\nNo vector space R over Z/2Z\n\n\n\nLinear Algebra\n\n\n\n\n\n\n\n\n\n\n\nNov 12, 2026\n\n\n\n\n\n\n\nProve that |x-a_i| are linearly independent\n\n\n\nLinear Algebra\n\n\n\n\n\n\n\n\n\n\n\nNov 12, 2026\n\n\n\n\n\n\n\nAM-GM for two variables\n\n\n\ninequalities\n\neasy\n\n\n\n\n\n\n\n\n\n\n\nNov 8, 2026\n\n\n\n\n\n\n\nLA P2\n\n\n\nLinear Algebra\n\nMedium\n\n\n\n\n\n\n\n\n\n\n\nNov 8, 2026\n\n\n\n\n\n\n\nMy new problem\n\n\n\ninequalities\n\nhard\n\n\n\n\n\n\n\n\n\n\n\nNov 8, 2026\n\n\n\n\n\nNo matching items"
+    "text": "Grab a pen and some paper. Try each problem before peeking at the solution!\n\n💡 Tip: tag problems with categories like easy, medium, hard or inequalities, and use the filter chips to browse.\n\n\n\n\n\n\n\n\n\n\nLA3\n\n\n\nhard\n\nLinear Algebra\n\n\n\n\n\n\n\n\n\n\n\nNov 12, 2026\n\n\n\n\n\n\n\nProve that distributation function is right continuous\n\n\n\nProbability\n\nmedium\n\n\n\n\n\n\n\n\n\n\n\nNov 12, 2026\n\n\n\n\n\n\n\nNo vector space R over Z/2Z\n\n\n\nLinear Algebra\n\n\n\n\n\n\n\n\n\n\n\nNov 12, 2026\n\n\n\n\n\n\n\nsalam\n\n\n\nLinear Algebra\n\n\n\n\n\n\n\n\n\n\n\nNov 12, 2026\n\n\n\n\n\n\n\nProve that |x-a_i| are linearly independent\n\n\n\nLinear Algebra\n\n\n\n\n\n\n\n\n\n\n\nNov 12, 2026\n\n\n\n\n\n\n\nAM-GM for two variables\n\n\n\ninequalities\n\neasy\n\n\n\n\n\n\n\n\n\n\n\nNov 8, 2026\n\n\n\n\n\n\n\nLA P2\n\n\n\nLinear Algebra\n\nMedium\n\n\n\n\n\n\n\n\n\n\n\nNov 8, 2026\n\n\n\n\n\n\n\nMy new problem\n\n\n\ninequalities\n\nhard\n\n\n\n\n\n\n\n\n\n\n\nNov 8, 2026\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "problems/LA4.html",
-    "href": "problems/LA4.html",
-    "title": "No vector space R over Z/2Z",
+    "objectID": "problems/ashkan.html",
+    "href": "problems/ashkan.html",
+    "title": "salam",
     "section": "",
-    "text": "Prove that there is no vector space \\(\\mathbb{R}\\) over the field \\(\\mathbb{Z}/2\\mathbb{Z}\\)"
+    "text": "Suppose for the sake of contradiction that ….. ##"
   },
   {
-    "objectID": "problems/LA4.html#problem",
-    "href": "problems/LA4.html#problem",
-    "title": "No vector space R over Z/2Z",
+    "objectID": "problems/ashkan.html#problem",
+    "href": "problems/ashkan.html#problem",
+    "title": "salam",
     "section": "",
-    "text": "Prove that there is no vector space \\(\\mathbb{R}\\) over the field \\(\\mathbb{Z}/2\\mathbb{Z}\\)"
+    "text": "Suppose for the sake of contradiction that ….. ##"
   },
   {
-    "objectID": "problems/LA2.html",
-    "href": "problems/LA2.html",
-    "title": "LA P2",
+    "objectID": "problems/PR1.html",
+    "href": "problems/PR1.html",
+    "title": "Prove that distributation function is right continuous",
     "section": "",
-    "text": "Suppose V is finite dimensional vector space and \\(T: V -&gt; V\\) is a linear map such that \\({v, T(v), ..., T^{(n-1)}(v)}\\) is a basis for V. If \\(S: V -&gt; V\\) is a linear transformation such that \\(ST = TS\\), prove that \\(S(x) = a_0I + a_1T(x) + ... + a_nT^{(n-1)}(x)\\) for some \\(a_i\\)\n\n\n\n\n\n\nNoteSolution\n\n\n\n\n\nSuppose \\(S(v) = a_0 v + a_1 T(v) + ... + a_n T(v)^{(n-1)}\\) we claim that the \\(a_i\\) satisfy \\(S(x) = a_0 v + a_1 T(x) + ... + a_n T(x)^{(n-1)}\\). Let \\(P(x) = S(x) = a_0 v + a_1 T(x) + ... + a_n T(x)^{(n-1)}\\). By definition of a_i, we have P(v) = S(v). Because ST = TS, we obtain that \\(ST^k = T^kS\\). Also because P is a polynomial of T, thus \\(PT^k = T^KP\\). Thus we have \\(P(T^k(v)) = T^k(P(V)) = T^k(S(v)) = S(T^k(v))\\). Because \\({v, Tv, T^2v, ..., T^{(n-1)v}}\\) is a basis for V and P and S have the same outputs, thus S = P."
+    "text": "Prove that distributation function is right continuous"
   },
   {
-    "objectID": "problems/LA2.html#problem",
-    "href": "problems/LA2.html#problem",
-    "title": "LA P2",
+    "objectID": "problems/PR1.html#problem",
+    "href": "problems/PR1.html#problem",
+    "title": "Prove that distributation function is right continuous",
     "section": "",
-    "text": "Suppose V is finite dimensional vector space and \\(T: V -&gt; V\\) is a linear map such that \\({v, T(v), ..., T^{(n-1)}(v)}\\) is a basis for V. If \\(S: V -&gt; V\\) is a linear transformation such that \\(ST = TS\\), prove that \\(S(x) = a_0I + a_1T(x) + ... + a_nT^{(n-1)}(x)\\) for some \\(a_i\\)\n\n\n\n\n\n\nNoteSolution\n\n\n\n\n\nSuppose \\(S(v) = a_0 v + a_1 T(v) + ... + a_n T(v)^{(n-1)}\\) we claim that the \\(a_i\\) satisfy \\(S(x) = a_0 v + a_1 T(x) + ... + a_n T(x)^{(n-1)}\\). Let \\(P(x) = S(x) = a_0 v + a_1 T(x) + ... + a_n T(x)^{(n-1)}\\). By definition of a_i, we have P(v) = S(v). Because ST = TS, we obtain that \\(ST^k = T^kS\\). Also because P is a polynomial of T, thus \\(PT^k = T^KP\\). Thus we have \\(P(T^k(v)) = T^k(P(V)) = T^k(S(v)) = S(T^k(v))\\). Because \\({v, Tv, T^2v, ..., T^{(n-1)v}}\\) is a basis for V and P and S have the same outputs, thus S = P."
+    "text": "Prove that distributation function is right continuous"
+  },
+  {
+    "objectID": "problems/am-gm.html",
+    "href": "problems/am-gm.html",
+    "title": "AM-GM for two variables",
+    "section": "",
+    "text": "Theorem 1 (AM-GM) For \\(a, b \\ge 0\\), \\(\\dfrac{a+b}{2} \\ge \\sqrt{ab}\\).\n\n\n\n\n\n\n\nNoteSolution\n\n\n\n\n\nSince \\((\\sqrt a - \\sqrt b)^2 \\ge 0\\), expanding gives \\(a + b \\ge 2\\sqrt{ab}\\). \\(\\square\\)"
   },
   {
     "objectID": "problems/LA3.html",
@@ -56,25 +63,32 @@
     "text": "Suppose V is a vector space such that \\(dim(V) &gt;= 2\\). If \\(F\\) is infinite prove that V can not be union of finitely many proper subspaces.\n\n\n\n\n\n\nNoteSolution\n\n\n\n\n\nSuppose for the sake of contradiction that V can be written as union of finitely many proper subspaces. Then V we can remove the subspaces that are subsets of each other and conclude that V can be writter as: \\(V = U_1 \\cup U_2 \\cup ... \\cup U_k\\) where \\(U_i \\nsubseteq \\bigcup_{j \\neq i} U_j\\) for all i, where \\(U_i\\) are proper subspaces of V. Choose \\(u \\in U_1\\) s.t \\(u \\notin \\bigcup_{i=2}^{k}U_i\\). Because \\(U_1\\) is proper subspace of V, there exist some \\(v \\in V-U_1\\). Consider the vectors \\(u+tv\\) where \\(t \\in F\\). if \\(t \\neq 0\\) then \\(u+tv \\notin U_1\\). We claim that for all \\(U_i, i&gt;1\\), at most one of the vectors \\(u+tv\\) are in \\(U_i\\). Suppose for the sake of contradiction that \\(u+t_1v, u+t_2v \\in U_i\\). Then: \\((t_1-t_2)v \\in U_i \\implies v \\in U_i \\implies u \\in U_i\\) which is a contradiction. Because there are finitely many \\(u+tv\\) in \\(U_1 \\cup U_2 \\cup ... \\cup U_k\\) but the number of vectors in the form \\(u+tv\\) is infinite, thus there exists some \\(u+t^*v \\notin U_1 \\cup U_2 \\cup ... \\cup U_k = V\\) which is a contradiction"
   },
   {
-    "objectID": "problems/am-gm.html",
-    "href": "problems/am-gm.html",
-    "title": "AM-GM for two variables",
+    "objectID": "problems/LA2.html",
+    "href": "problems/LA2.html",
+    "title": "LA P2",
     "section": "",
-    "text": "Theorem 1 (AM-GM) For \\(a, b \\ge 0\\), \\(\\dfrac{a+b}{2} \\ge \\sqrt{ab}\\).\n\n\n\n\n\n\n\nNoteSolution\n\n\n\n\n\nSince \\((\\sqrt a - \\sqrt b)^2 \\ge 0\\), expanding gives \\(a + b \\ge 2\\sqrt{ab}\\). \\(\\square\\)"
+    "text": "Suppose V is finite dimensional vector space and \\(T: V -&gt; V\\) is a linear map such that \\({v, T(v), ..., T^{(n-1)}(v)}\\) is a basis for V. If \\(S: V -&gt; V\\) is a linear transformation such that \\(ST = TS\\), prove that \\(S(x) = a_0I + a_1T(x) + ... + a_nT^{(n-1)}(x)\\) for some \\(a_i\\)\n\n\n\n\n\n\nNoteSolution\n\n\n\n\n\nSuppose \\(S(v) = a_0 v + a_1 T(v) + ... + a_n T(v)^{(n-1)}\\) we claim that the \\(a_i\\) satisfy \\(S(x) = a_0 v + a_1 T(x) + ... + a_n T(x)^{(n-1)}\\). Let \\(P(x) = S(x) = a_0 v + a_1 T(x) + ... + a_n T(x)^{(n-1)}\\). By definition of a_i, we have P(v) = S(v). Because ST = TS, we obtain that \\(ST^k = T^kS\\). Also because P is a polynomial of T, thus \\(PT^k = T^KP\\). Thus we have \\(P(T^k(v)) = T^k(P(V)) = T^k(S(v)) = S(T^k(v))\\). Because \\({v, Tv, T^2v, ..., T^{(n-1)v}}\\) is a basis for V and P and S have the same outputs, thus S = P."
   },
   {
-    "objectID": "problems/PR1.html",
-    "href": "problems/PR1.html",
-    "title": "Prove that distributation function is right continuous",
+    "objectID": "problems/LA2.html#problem",
+    "href": "problems/LA2.html#problem",
+    "title": "LA P2",
     "section": "",
-    "text": "Prove that distributation function is right continuous"
+    "text": "Suppose V is finite dimensional vector space and \\(T: V -&gt; V\\) is a linear map such that \\({v, T(v), ..., T^{(n-1)}(v)}\\) is a basis for V. If \\(S: V -&gt; V\\) is a linear transformation such that \\(ST = TS\\), prove that \\(S(x) = a_0I + a_1T(x) + ... + a_nT^{(n-1)}(x)\\) for some \\(a_i\\)\n\n\n\n\n\n\nNoteSolution\n\n\n\n\n\nSuppose \\(S(v) = a_0 v + a_1 T(v) + ... + a_n T(v)^{(n-1)}\\) we claim that the \\(a_i\\) satisfy \\(S(x) = a_0 v + a_1 T(x) + ... + a_n T(x)^{(n-1)}\\). Let \\(P(x) = S(x) = a_0 v + a_1 T(x) + ... + a_n T(x)^{(n-1)}\\). By definition of a_i, we have P(v) = S(v). Because ST = TS, we obtain that \\(ST^k = T^kS\\). Also because P is a polynomial of T, thus \\(PT^k = T^KP\\). Thus we have \\(P(T^k(v)) = T^k(P(V)) = T^k(S(v)) = S(T^k(v))\\). Because \\({v, Tv, T^2v, ..., T^{(n-1)v}}\\) is a basis for V and P and S have the same outputs, thus S = P."
   },
   {
-    "objectID": "problems/PR1.html#problem",
-    "href": "problems/PR1.html#problem",
-    "title": "Prove that distributation function is right continuous",
+    "objectID": "problems/LA4.html",
+    "href": "problems/LA4.html",
+    "title": "No vector space R over Z/2Z",
     "section": "",
-    "text": "Prove that distributation function is right continuous"
+    "text": "Prove that there is no vector space \\(\\mathbb{R}\\) over the field \\(\\mathbb{Z}/2\\mathbb{Z}\\)"
+  },
+  {
+    "objectID": "problems/LA4.html#problem",
+    "href": "problems/LA4.html#problem",
+    "title": "No vector space R over Z/2Z",
+    "section": "",
+    "text": "Prove that there is no vector space \\(\\mathbb{R}\\) over the field \\(\\mathbb{Z}/2\\mathbb{Z}\\)"
   },
   {
     "objectID": "problems/LA1.html",
