@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Welcome – MATHHHH</title>
+<title>Welcome – Math Playground</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -36,6 +36,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧮</text></svg>" rel="icon">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
@@ -48,7 +49,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ff7c3017f5a4ed09199bd8083b64c522.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-a46fd62610e4884b3c4e11dcea664e44.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -101,22 +102,8 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -145,7 +132,6 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
@@ -156,7 +142,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">MATHHHH</span>
+    <span class="navbar-title">Math Playground</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -166,23 +152,24 @@ window.Quarto = {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text">🏠 Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./problems.qmd"> 
-<span class="menu-text">Problems</span></a>
+    <a class="nav-link" href="./problems.html"> 
+<span class="menu-text">🧩 Problems</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./topics.qmd"> 
-<span class="menu-text">Topics</span></a>
+    <a class="nav-link" href="./topics.html"> 
+<span class="menu-text">📚 Topics</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.qmd"> 
-<span class="menu-text">About</span></a>
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">👋 About</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+    <a href="https://github.com/daniyalpr" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
 </div>
             <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
@@ -192,8 +179,15 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#hi-welcome-to-my-math-playground" id="toc-hi-welcome-to-my-math-playground" class="nav-link active" data-scroll-target="#hi-welcome-to-my-math-playground">Hi, welcome to my math playground! 🎉</a></li>
+  <li><a href="#latest-posts" id="toc-latest-posts" class="nav-link" data-scroll-target="#latest-posts">✨ Latest posts</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content" tabindex="-1">
@@ -217,14 +211,37 @@ window.Quarto = {
 </header>
 
 
-<p>I write about math problems and topics I find interesting. Below are the latest posts.</p>
+<section id="hi-welcome-to-my-math-playground" class="level2 hero">
+<h2 class="anchored" data-anchor-id="hi-welcome-to-my-math-playground">Hi, welcome to my math playground! 🎉</h2>
+<p>I write about math problems and topics I find interesting.</p>
+</section>
+<div class="card-row">
+<section id="problems" class="level3 fun-card coral">
+<h3 class="anchored" data-anchor-id="problems">🧩 Problems</h3>
+<p>Puzzles and competition-style problems to chew on.</p>
+<p><a href="./problems.html" class="btn-fun">Try some</a></p>
+</section>
+<section id="topics" class="level3 fun-card mint">
+<h3 class="anchored" data-anchor-id="topics">📚 Topics</h3>
+<p>Friendly explanations of ideas from analysis and beyond.</p>
+<p><a href="./topics.html" class="btn-fun">Start reading</a></p>
+</section>
+<section id="about" class="level3 fun-card sun">
+<h3 class="anchored" data-anchor-id="about">👋 About</h3>
+<p>Who is behind all the symbols?</p>
+<p><a href="./about.html" class="btn-fun">Say hi</a></p>
+</section>
+</div>
+<section id="latest-posts" class="level2">
+<h2 class="anchored" data-anchor-id="latest-posts">✨ Latest posts</h2>
 
 
 
+</section>
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="aGFyZCUyQ0xpbmVhciUyMEFsZ2VicmE=" data-listing-date-sort="1794429000000" data-listing-file-modified-sort="1794494721454" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="211">
+<div class="quarto-post image-right" data-index="0" data-categories="aGFyZCUyQ0xpbmVhciUyMEFsZ2VicmE=" data-listing-date-sort="1794429000000" data-listing-file-modified-sort="1794495054329" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="211">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./problems/LA3.html" class="no-external-icon">LA3</a>
@@ -245,7 +262,7 @@ Nov 12, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="UHJvYmFiaWxpdHklMkNtZWRpdW0=" data-listing-date-sort="1794429000000" data-listing-file-modified-sort="1794494560036" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
+<div class="quarto-post image-right" data-index="1" data-categories="UHJvYmFiaWxpdHklMkNtZWRpdW0=" data-listing-date-sort="1794429000000" data-listing-file-modified-sort="1794495054328" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./problems/PR1.html" class="no-external-icon">Prove that distributation function is right continuous</a>
@@ -266,7 +283,7 @@ Nov 12, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="TGluZWFyJTIwQWxnZWJyYQ==" data-listing-date-sort="1794429000000" data-listing-file-modified-sort="1794488962200" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+<div class="quarto-post image-right" data-index="2" data-categories="TGluZWFyJTIwQWxnZWJyYQ==" data-listing-date-sort="1794429000000" data-listing-file-modified-sort="1794495054329" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./problems/LA4.html" class="no-external-icon">No vector space R over Z/2Z</a>
@@ -285,7 +302,7 @@ Nov 12, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="aW5lcXVhbGl0aWVzJTJDZWFzeQ==" data-listing-date-sort="1794083400000" data-listing-file-modified-sort="1794149829706" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
+<div class="quarto-post image-right" data-index="3" data-categories="aW5lcXVhbGl0aWVzJTJDZWFzeQ==" data-listing-date-sort="1794083400000" data-listing-file-modified-sort="1794495054329" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./problems/am-gm.html" class="no-external-icon">AM-GM for two variables</a>
@@ -306,7 +323,7 @@ Nov 8, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="TGluZWFyJTIwQWxnZWJyYSUyQ01lZGl1bQ==" data-listing-date-sort="1794083400000" data-listing-file-modified-sort="1794149990465" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="164">
+<div class="quarto-post image-right" data-index="4" data-categories="TGluZWFyJTIwQWxnZWJyYSUyQ01lZGl1bQ==" data-listing-date-sort="1794083400000" data-listing-file-modified-sort="1794495054329" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="164">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./problems/LA2.html" class="no-external-icon">LA P2</a>
@@ -327,7 +344,7 @@ Nov 8, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="aW5lcXVhbGl0aWVzJTJDaGFyZA==" data-listing-date-sort="1794083400000" data-listing-file-modified-sort="1794135821999" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="26">
+<div class="quarto-post image-right" data-index="5" data-categories="aW5lcXVhbGl0aWVzJTJDaGFyZA==" data-listing-date-sort="1794083400000" data-listing-file-modified-sort="1794495054329" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="26">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./problems/LA1.html" class="no-external-icon">My new problem</a>
@@ -425,6 +442,24 @@ Nov 8, 2026
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
         var filterRegex = new RegExp("https:\/\/daniyalpr\.github\.io\/");
+      const newWindowLabel = "(opens in a new tab)";
+      const newWindowNoteId = "quarto-ext-newwindow-label";
+      // Links reference one hidden label through aria-describedby, so the
+      // announcement never changes their accessible name.
+      var describeNewWindow = (link) => {
+        if (!window.document.getElementById(newWindowNoteId)) {
+          var newWindowNote = window.document.createElement("span");
+          newWindowNote.id = newWindowNoteId;
+          newWindowNote.hidden = true;
+          newWindowNote.textContent = newWindowLabel;
+          window.document.body.appendChild(newWindowNote);
+        }
+        var describedBy = (link.getAttribute("aria-describedby") || "").split(/\s+/).filter(Boolean);
+        if (!describedBy.includes(newWindowNoteId)) {
+          describedBy.push(newWindowNoteId);
+          link.setAttribute("aria-describedby", describedBy.join(" "));
+        }
+      }
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -439,6 +474,12 @@ Nov 8, 2026
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            describeNewWindow(link);
           if (!link.classList.contains('no-external-icon')) {
           }
         }
@@ -828,6 +869,19 @@ Nov 8, 2026
   window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Made with 💜, coffee and Quarto</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 

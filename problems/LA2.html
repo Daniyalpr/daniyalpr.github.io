@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2026-11-08">
 
-<title>LA P2 – MATHHHH</title>
+<title>LA P2 – Math Playground</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -37,6 +37,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧮</text></svg>" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
@@ -47,7 +48,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-ff7c3017f5a4ed09199bd8083b64c522.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-a46fd62610e4884b3c4e11dcea664e44.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -77,22 +78,8 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -121,7 +108,6 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
@@ -132,7 +118,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">MATHHHH</span>
+    <span class="navbar-title">Math Playground</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -142,23 +128,24 @@ window.Quarto = {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text">🏠 Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../problems.qmd"> 
-<span class="menu-text">Problems</span></a>
+    <a class="nav-link" href="../problems.html"> 
+<span class="menu-text">🧩 Problems</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../topics.qmd"> 
-<span class="menu-text">Topics</span></a>
+    <a class="nav-link" href="../topics.html"> 
+<span class="menu-text">📚 Topics</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.qmd"> 
-<span class="menu-text">About</span></a>
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">👋 About</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+    <a href="https://github.com/daniyalpr" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
 </div>
             <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
@@ -211,7 +198,7 @@ window.Quarto = {
 
 <section id="problem" class="level2">
 <h2 class="anchored" data-anchor-id="problem">problem</h2>
-<p>Suppose V is finite dimensional vector space and <span class="math inline">T: V -&gt; V</span> is a linear map such that <span class="math inline">{v, T(v), ..., T^{(n-1)}(v)}</span> is a basis for V. If <span class="math inline">S: V -&gt; V</span> is a linear transformation such that <span class="math inline">ST = TS</span>, prove that <span class="math inline">S(x) = a_0I + a_1T(x) + ... + a_nT^{(n-1)}(x)</span> for some <span class="math inline">a_i</span></p>
+<p>Suppose V is finite dimensional vector space and <span class="math inline">\(T: V -&gt; V\)</span> is a linear map such that <span class="math inline">\({v, T(v), ..., T^{(n-1)}(v)}\)</span> is a basis for V. If <span class="math inline">\(S: V -&gt; V\)</span> is a linear transformation such that <span class="math inline">\(ST = TS\)</span>, prove that <span class="math inline">\(S(x) = a_0I + a_1T(x) + ... + a_nT^{(n-1)}(x)\)</span> for some <span class="math inline">\(a_i\)</span></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -224,7 +211,7 @@ window.Quarto = {
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Suppose <span class="math inline">S(v) = a_0 v + a_1 T(v) + ... + a_n T(v)^{(n-1)}</span> we claim that the <span class="math inline">a_i</span> satisfy <span class="math inline">S(x) = a_0 v + a_1 T(x) + ... + a_n T(x)^{(n-1)}</span>. Let <span class="math inline">P(x) = S(x) = a_0 v + a_1 T(x) + ... + a_n T(x)^{(n-1)}</span>. By definition of a_i, we have P(v) = S(v). Because ST = TS, we obtain that <span class="math inline">ST^k = T^kS</span>. Also because P is a polynomial of T, thus <span class="math inline">PT^k = T^KP</span>. Thus we have <span class="math inline">P(T^k(v)) = T^k(P(V)) = T^k(S(v)) = S(T^k(v))</span>. Because <span class="math inline">{v, Tv, T^2v, ..., T^{(n-1)v}}</span> is a basis for V and P and S have the same outputs, thus S = P.</p>
+<p>Suppose <span class="math inline">\(S(v) = a_0 v + a_1 T(v) + ... + a_n T(v)^{(n-1)}\)</span> we claim that the <span class="math inline">\(a_i\)</span> satisfy <span class="math inline">\(S(x) = a_0 v + a_1 T(x) + ... + a_n T(x)^{(n-1)}\)</span>. Let <span class="math inline">\(P(x) = S(x) = a_0 v + a_1 T(x) + ... + a_n T(x)^{(n-1)}\)</span>. By definition of a_i, we have P(v) = S(v). Because ST = TS, we obtain that <span class="math inline">\(ST^k = T^kS\)</span>. Also because P is a polynomial of T, thus <span class="math inline">\(PT^k = T^KP\)</span>. Thus we have <span class="math inline">\(P(T^k(v)) = T^k(P(V)) = T^k(S(v)) = S(T^k(v))\)</span>. Because <span class="math inline">\({v, Tv, T^2v, ..., T^{(n-1)v}}\)</span> is a basis for V and P and S have the same outputs, thus S = P.</p>
 </div>
 </div>
 </div>
@@ -307,6 +294,24 @@ window.Quarto = {
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
         var filterRegex = new RegExp("https:\/\/daniyalpr\.github\.io\/");
+      const newWindowLabel = "(opens in a new tab)";
+      const newWindowNoteId = "quarto-ext-newwindow-label";
+      // Links reference one hidden label through aria-describedby, so the
+      // announcement never changes their accessible name.
+      var describeNewWindow = (link) => {
+        if (!window.document.getElementById(newWindowNoteId)) {
+          var newWindowNote = window.document.createElement("span");
+          newWindowNote.id = newWindowNoteId;
+          newWindowNote.hidden = true;
+          newWindowNote.textContent = newWindowLabel;
+          window.document.body.appendChild(newWindowNote);
+        }
+        var describedBy = (link.getAttribute("aria-describedby") || "").split(/\s+/).filter(Boolean);
+        if (!describedBy.includes(newWindowNoteId)) {
+          describedBy.push(newWindowNoteId);
+          link.setAttribute("aria-describedby", describedBy.join(" "));
+        }
+      }
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -321,6 +326,12 @@ window.Quarto = {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            describeNewWindow(link);
           if (!link.classList.contains('no-external-icon')) {
           }
         }
@@ -710,6 +721,19 @@ window.Quarto = {
   window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Made with 💜, coffee and Quarto</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 

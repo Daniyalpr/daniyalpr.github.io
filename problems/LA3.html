@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2026-11-12">
 
-<title>LA3 – MATHHHH</title>
+<title>LA3 – Math Playground</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -37,6 +37,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧮</text></svg>" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
@@ -47,7 +48,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-ff7c3017f5a4ed09199bd8083b64c522.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-a46fd62610e4884b3c4e11dcea664e44.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -77,22 +78,8 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -121,7 +108,6 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
@@ -132,7 +118,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">MATHHHH</span>
+    <span class="navbar-title">Math Playground</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -142,23 +128,24 @@ window.Quarto = {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text">🏠 Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../problems.qmd"> 
-<span class="menu-text">Problems</span></a>
+    <a class="nav-link" href="../problems.html"> 
+<span class="menu-text">🧩 Problems</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../topics.qmd"> 
-<span class="menu-text">Topics</span></a>
+    <a class="nav-link" href="../topics.html"> 
+<span class="menu-text">📚 Topics</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.qmd"> 
-<span class="menu-text">About</span></a>
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">👋 About</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+    <a href="https://github.com/daniyalpr" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
 </div>
             <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
@@ -211,7 +198,7 @@ window.Quarto = {
 
 <section id="problem" class="level2">
 <h2 class="anchored" data-anchor-id="problem">Problem</h2>
-<p>Suppose V is a vector space such that <span class="math inline">dim(V) &gt;= 2</span>. If <span class="math inline">F</span> is infinite prove that V can not be union of finitely many proper subspaces.</p>
+<p>Suppose V is a vector space such that <span class="math inline">\(dim(V) &gt;= 2\)</span>. If <span class="math inline">\(F\)</span> is infinite prove that V can not be union of finitely many proper subspaces.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -224,7 +211,7 @@ window.Quarto = {
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Suppose for the sake of contradiction that V can be written as union of finitely many proper subspaces. Then V we can remove the subspaces that are subsets of each other and conclude that V can be writter as: <span class="math inline">V = U_1 \cup U_2 \cup ... \cup U_k</span> where <span class="math inline">U_i \nsubseteq \bigcup_{j \neq i} U_j</span> for all i, where <span class="math inline">U_i</span> are proper subspaces of V. Choose <span class="math inline">u \in U_1</span> s.t <span class="math inline">u \notin \bigcup_{i=2}^{k}U_i</span>. Because <span class="math inline">U_1</span> is proper subspace of V, there exist some <span class="math inline">v \in V-U_1</span>. Consider the vectors <span class="math inline">u+tv</span> where <span class="math inline">t \in F</span>. if <span class="math inline">t \neq 0</span> then <span class="math inline">u+tv \notin U_1</span>. We claim that for all <span class="math inline">U_i, i&gt;1</span>, at most one of the vectors <span class="math inline">u+tv</span> are in <span class="math inline">U_i</span>. Suppose for the sake of contradiction that <span class="math inline">u+t_1v, u+t_2v \in U_i</span>. Then: <span class="math inline">(t_1-t_2)v \in U_i \implies v \in U_i \implies u \in U_i</span> which is a contradiction. Because there are finitely many <span class="math inline">u+tv</span> in <span class="math inline">U_1 \cup U_2 \cup ... \cup U_k</span> but the number of vectors in the form <span class="math inline">u+tv</span> is infinite, thus there exists some <span class="math inline">u+t^*v \notin U_1 \cup U_2 \cup ... \cup U_k = V</span> which is a contradiction</p>
+<p>Suppose for the sake of contradiction that V can be written as union of finitely many proper subspaces. Then V we can remove the subspaces that are subsets of each other and conclude that V can be writter as: <span class="math inline">\(V = U_1 \cup U_2 \cup ... \cup U_k\)</span> where <span class="math inline">\(U_i \nsubseteq \bigcup_{j \neq i} U_j\)</span> for all i, where <span class="math inline">\(U_i\)</span> are proper subspaces of V. Choose <span class="math inline">\(u \in U_1\)</span> s.t <span class="math inline">\(u \notin \bigcup_{i=2}^{k}U_i\)</span>. Because <span class="math inline">\(U_1\)</span> is proper subspace of V, there exist some <span class="math inline">\(v \in V-U_1\)</span>. Consider the vectors <span class="math inline">\(u+tv\)</span> where <span class="math inline">\(t \in F\)</span>. if <span class="math inline">\(t \neq 0\)</span> then <span class="math inline">\(u+tv \notin U_1\)</span>. We claim that for all <span class="math inline">\(U_i, i&gt;1\)</span>, at most one of the vectors <span class="math inline">\(u+tv\)</span> are in <span class="math inline">\(U_i\)</span>. Suppose for the sake of contradiction that <span class="math inline">\(u+t_1v, u+t_2v \in U_i\)</span>. Then: <span class="math inline">\((t_1-t_2)v \in U_i \implies v \in U_i \implies u \in U_i\)</span> which is a contradiction. Because there are finitely many <span class="math inline">\(u+tv\)</span> in <span class="math inline">\(U_1 \cup U_2 \cup ... \cup U_k\)</span> but the number of vectors in the form <span class="math inline">\(u+tv\)</span> is infinite, thus there exists some <span class="math inline">\(u+t^*v \notin U_1 \cup U_2 \cup ... \cup U_k = V\)</span> which is a contradiction</p>
 </div>
 </div>
 </div>
@@ -307,6 +294,24 @@ window.Quarto = {
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
         var filterRegex = new RegExp("https:\/\/daniyalpr\.github\.io\/");
+      const newWindowLabel = "(opens in a new tab)";
+      const newWindowNoteId = "quarto-ext-newwindow-label";
+      // Links reference one hidden label through aria-describedby, so the
+      // announcement never changes their accessible name.
+      var describeNewWindow = (link) => {
+        if (!window.document.getElementById(newWindowNoteId)) {
+          var newWindowNote = window.document.createElement("span");
+          newWindowNote.id = newWindowNoteId;
+          newWindowNote.hidden = true;
+          newWindowNote.textContent = newWindowLabel;
+          window.document.body.appendChild(newWindowNote);
+        }
+        var describedBy = (link.getAttribute("aria-describedby") || "").split(/\s+/).filter(Boolean);
+        if (!describedBy.includes(newWindowNoteId)) {
+          describedBy.push(newWindowNoteId);
+          link.setAttribute("aria-describedby", describedBy.join(" "));
+        }
+      }
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -321,6 +326,12 @@ window.Quarto = {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            describeNewWindow(link);
           if (!link.classList.contains('no-external-icon')) {
           }
         }
@@ -710,6 +721,19 @@ window.Quarto = {
   window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Made with 💜, coffee and Quarto</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 
