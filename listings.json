@@ -6,6 +6,7 @@
   {
     "listing": "/problems.html",
     "items": [
+      "/problems/LA6.html",
       "/problems/LA3.html",
       "/problems/PR1.html",
       "/problems/LA4.html",
@@ -19,6 +20,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/problems/LA6.html",
       "/problems/LA3.html",
       "/problems/PR1.html",
       "/problems/LA4.html",
