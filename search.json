@@ -14,6 +14,20 @@
     "text": "Grab a pen and some paper. Try each problem before peeking at the solution!\n\n💡 Tip: tag problems with categories like easy, medium, hard or inequalities, and use the filter chips to browse.\n\n\n\n\n\n\n\n\n\n\nShow that ln(p) are linearly independent where p is prime and R is a vector space over Q\n\n\n\nLinear Algebra\n\nEasy\n\n\n\n\n\n\n\n\n\n\n\nNov 13, 2026\n\n\n\n\n\n\n\nLA3\n\n\n\nLinear Algebra\n\nHard\n\n\n\n\n\n\n\n\n\n\n\nNov 12, 2026\n\n\n\n\n\n\n\nProve that distributation function is right continuous\n\n\n\nProbability\n\nmedium\n\n\n\n\n\n\n\n\n\n\n\nNov 12, 2026\n\n\n\n\n\n\n\nNo vector space R over Z/2Z\n\n\n\nLinear Algebra\n\n\n\n\n\n\n\n\n\n\n\nNov 12, 2026\n\n\n\n\n\n\n\nProve that |x-a_i| are linearly independent\n\n\n\nLinear Algebra\n\n\n\n\n\n\n\n\n\n\n\nNov 12, 2026\n\n\n\n\n\n\n\nLA P2\n\n\n\nLinear Algebra\n\nMedium\n\n\n\n\n\n\n\n\n\n\n\nNov 8, 2026\n\n\n\n\n\n\n\nLA1\n\n\n\ninequalities\n\nhard\n\n\n\n\n\n\n\n\n\n\n\nNov 8, 2026\n\n\n\n\n\nNo matching items"
   },
   {
+    "objectID": "problems/LA5.html",
+    "href": "problems/LA5.html",
+    "title": "Prove that |x-a_i| are linearly independent",
+    "section": "",
+    "text": "Let \\(V\\) be the vector space of all functions from \\(\\mathbb{R}\\) to \\(\\mathbb{R}\\). Prove that the subest \\(L = \\{|x-a_i| ; a_i \\in \\mathbb{R}\\}\\) is linearly independent.\n\n\n\n\n\n\nNoteHint 1\n\n\n\n\n\nThink about the points that \\(|x-a_i|\\) are not differentiable at."
+  },
+  {
+    "objectID": "problems/LA5.html#problem",
+    "href": "problems/LA5.html#problem",
+    "title": "Prove that |x-a_i| are linearly independent",
+    "section": "",
+    "text": "Let \\(V\\) be the vector space of all functions from \\(\\mathbb{R}\\) to \\(\\mathbb{R}\\). Prove that the subest \\(L = \\{|x-a_i| ; a_i \\in \\mathbb{R}\\}\\) is linearly independent.\n\n\n\n\n\n\nNoteHint 1\n\n\n\n\n\nThink about the points that \\(|x-a_i|\\) are not differentiable at."
+  },
+  {
     "objectID": "problems/LA6.html",
     "href": "problems/LA6.html",
     "title": "Show that ln(p) are linearly independent where p is prime and R is a vector space over Q",
