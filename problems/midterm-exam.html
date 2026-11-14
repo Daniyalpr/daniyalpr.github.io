@@ -77,6 +77,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -162,53 +191,77 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="question-1" class="level2">
 <h2 class="anchored" data-anchor-id="question-1">Question 1</h2>
-<p>Consider the vector space (V=P_3()), and let</p>
-<p>[ A={fVf(0)f(1)=1}. ]</p>
-<p><strong>(a)</strong> Is (A) a subspace of (V)?</p>
-<p><strong>(b)</strong> Find the span of (A), i.e., ((A)).</p>
+<p>Consider the vector space <span class="math inline">\(V=P_3(\mathbb{R})\)</span>, and let</p>
+<p><span class="math display">\[
+A=\{f\in V\mid f(0)f(1)=1\}.
+\]</span></p>
+<p><strong>(a)</strong> Is <span class="math inline">\(A\)</span> a subspace of <span class="math inline">\(V\)</span>?</p>
+<p><strong>(b)</strong> Find the span of <span class="math inline">\(A\)</span>, i.e., <span class="math inline">\(\operatorname{span}(A)\)</span>.</p>
 </section>
 <section id="question-2" class="level2">
 <h2 class="anchored" data-anchor-id="question-2">Question 2</h2>
-<p>Let (F) be a field and (V) a vector space over (F). Suppose that (n) and that (v_1,,v_n) are linearly independent vectors in (V).</p>
+<p>Let <span class="math inline">\(F\)</span> be a field and <span class="math inline">\(V\)</span> a vector space over <span class="math inline">\(F\)</span>. Suppose that <span class="math inline">\(n\geq 3\)</span> and that <span class="math inline">\(v_1,\ldots,v_n\)</span> are linearly independent vectors in <span class="math inline">\(V\)</span>.</p>
 <p>Consider the following vectors:</p>
-<p>[ u_i=v_i+v_{i+1},i&lt;n, ]</p>
+<p><span class="math display">\[
+u_i=v_i+v_{i+1},\qquad 1\leq i&lt;n,
+\]</span></p>
 <p>and</p>
-<p>[ u_n=v_n+v_1. ]</p>
-<p><strong>(a)</strong> If (F=), prove that (u_1,,u_n) are linearly independent.</p>
-<p><strong>(b)</strong> Give an example of a field (F), a vector space (V) over (F), and linearly independent vectors (v_1,,v_n) such that (u_1,,u_n) are linearly dependent.</p>
+<p><span class="math display">\[
+u_n=v_n+v_1.
+\]</span></p>
+<p><strong>(a)</strong> If <span class="math inline">\(F=\mathbb{R}\)</span>, prove that <span class="math inline">\(u_1,\ldots,u_n\)</span> are linearly independent.</p>
+<p><strong>(b)</strong> Give an example of a field <span class="math inline">\(F\)</span>, a vector space <span class="math inline">\(V\)</span> over <span class="math inline">\(F\)</span>, and linearly independent vectors <span class="math inline">\(v_1,\ldots,v_n\)</span> such that <span class="math inline">\(u_1,\ldots,u_n\)</span> are linearly dependent.</p>
 </section>
 <section id="question-3" class="level2">
 <h2 class="anchored" data-anchor-id="question-3">Question 3</h2>
 <p>Consider the vector space</p>
-<p>[ V=_3^3 ]</p>
+<p><span class="math display">\[
+V=\mathbb{F}_3^3
+\]</span></p>
 <p>and the following subset:</p>
-<p>[ W={(x,y,z)Vx+y+z=0}. ]</p>
-<p><strong>(a)</strong> Find a basis for (W).</p>
+<p><span class="math display">\[
+W=\{(x,y,z)\in V\mid x+y+z=0\}.
+\]</span></p>
+<p><strong>(a)</strong> Find a basis for <span class="math inline">\(W\)</span>.</p>
 <p><strong>(b)</strong> Determine the number of ordered triples</p>
-<p>[ (v_1,v_2,v_3) ]</p>
-<p>that form a basis for (V).</p>
-<p><strong>(c)</strong> Determine the number of two-dimensional subspaces of (V).</p>
+<p><span class="math display">\[
+(v_1,v_2,v_3)
+\]</span></p>
+<p>that form a basis for <span class="math inline">\(V\)</span>.</p>
+<p><strong>(c)</strong> Determine the number of two-dimensional subspaces of <span class="math inline">\(V\)</span>.</p>
 </section>
 <section id="question-4" class="level2">
 <h2 class="anchored" data-anchor-id="question-4">Question 4</h2>
-<p>Suppose (U) and (W) are finite-dimensional subspaces of a vector space (V).</p>
+<p>Suppose <span class="math inline">\(U\)</span> and <span class="math inline">\(W\)</span> are finite-dimensional subspaces of a vector space <span class="math inline">\(V\)</span>.</p>
 <p>Prove that</p>
-<p>[ (U+W)=U+W-(UW). ]</p>
+<p><span class="math display">\[
+\dim(U+W)=\dim U+\dim W-\dim(U\cap W).
+\]</span></p>
 </section>
 <section id="question-5" class="level2">
 <h2 class="anchored" data-anchor-id="question-5">Question 5</h2>
 <p>Let</p>
-<p>[ G={g_1,,g_n} ]</p>
-<p>be a basis for a vector space (V), where (n).</p>
+<p><span class="math display">\[
+G=\{g_1,\ldots,g_n\}
+\]</span></p>
+<p>be a basis for a vector space <span class="math inline">\(V\)</span>, where <span class="math inline">\(n\geq 2\)</span>.</p>
 <p>Suppose that</p>
-<p>[ v=<em>{k=1}^{n}a_kg_k, w=</em>{k=1}^{n}b_kg_k, ]</p>
-<p>where (v,w) are linearly independent.</p>
-<p><strong>(a)</strong> Prove that there exist two distinct indices (i,j) such that</p>
-<p>[ (G{g_i,g_j}){v,w} ]</p>
-<p>is a basis for (V).</p>
-<p><strong>(b)</strong> For two distinct indices (i,j), find a necessary and sufficient condition on the coefficients (a_i,a_j,b_i,b_j) such that</p>
-<p>[ (G{g_i,g_j}){v,w} ]</p>
-<p>forms a basis for (V).</p>
+<p><span class="math display">\[
+v=\sum_{k=1}^{n}a_kg_k,
+\qquad
+w=\sum_{k=1}^{n}b_kg_k,
+\]</span></p>
+<p>where <span class="math inline">\(v,w\)</span> are linearly independent.</p>
+<p><strong>(a)</strong> Prove that there exist two distinct indices <span class="math inline">\(i,j\)</span> such that</p>
+<p><span class="math display">\[
+(G\setminus\{g_i,g_j\})\cup\{v,w\}
+\]</span></p>
+<p>is a basis for <span class="math inline">\(V\)</span>.</p>
+<p><strong>(b)</strong> For two distinct indices <span class="math inline">\(i,j\)</span>, find a necessary and sufficient condition on the coefficients <span class="math inline">\(a_i,a_j,b_i,b_j\)</span> such that</p>
+<p><span class="math display">\[
+(G\setminus\{g_i,g_j\})\cup\{v,w\}
+\]</span></p>
+<p>forms a basis for <span class="math inline">\(V\)</span>.</p>
 
 
 </section>
