@@ -7,6 +7,7 @@
     "listing": "/problems.html",
     "items": [
       "/problems/midterm-exam.html",
+      "/problems/prob-midterm.html",
       "/problems/LA6.html",
       "/problems/LA3.html",
       "/problems/PR1.html",
@@ -20,6 +21,7 @@
     "listing": "/index.html",
     "items": [
       "/problems/midterm-exam.html",
+      "/problems/prob-midterm.html",
       "/problems/LA6.html",
       "/problems/LA3.html",
       "/problems/PR1.html",
