@@ -11,7 +11,7 @@
     "href": "problems.html",
     "title": "🧩 Problems",
     "section": "",
-    "text": "Grab a pen and some paper. Try each problem before peeking at the solution!\n\n💡 Tip: tag problems with categories like easy, medium, hard or inequalities, and use the filter chips to browse.\n\n\n\n\n\n\n\n\n\n\nLinear Algebra — Midterm Exam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPreparation for probability midterm\n\n\n\n\n\n\n\n\n\n\nNov 15, 2026\n\n\n\n\n\n\n\nShow that ln(p) are linearly independent where p is prime and R is a vector space over Q\n\n\n\nLinear Algebra\n\nEasy\n\n\n\n\n\n\n\n\n\n\n\nNov 13, 2026\n\n\n\n\n\n\n\nLA3\n\n\n\nLinear Algebra\n\nHard\n\n\n\n\n\n\n\n\n\n\n\nNov 12, 2026\n\n\n\n\n\n\n\nProve that distributation function is right continuous\n\n\n\nProbability\n\nmedium\n\n\n\n\n\n\n\n\n\n\n\nNov 12, 2026\n\n\n\n\n\n\n\nNo vector space R over Z/2Z\n\n\n\nLinear Algebra\n\n\n\n\n\n\n\n\n\n\n\nNov 12, 2026\n\n\n\n\n\n\n\nProve that |x-a_i| are linearly independent\n\n\n\nLinear Algebra\n\n\n\n\n\n\n\n\n\n\n\nNov 12, 2026\n\n\n\n\n\n\n\nLA P2\n\n\n\nLinear Algebra\n\nMedium\n\n\n\n\n\n\n\n\n\n\n\nNov 8, 2026\n\n\n\n\n\n\n\nLA1\n\n\n\ninequalities\n\nhard\n\n\n\n\n\n\n\n\n\n\n\nNov 8, 2026\n\n\n\n\n\nNo matching items"
+    "text": "Grab a pen and some paper. Try each problem before peeking at the solution!\n\n💡 Tip: tag problems with categories like easy, medium, hard or inequalities, and use the filter chips to browse.\n\n\n\n\n\n\n\n\n\n\nLinear Algebra — Midterm Exam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConjugation over the field of Real numbers and complex numbers\n\n\n\nLinear Algebra\n\nEasy\n\n\n\n\n\n\n\n\n\n\n\nNov 18, 2026\n\n\n\n\n\n\n\nPreparation for probability midterm\n\n\n\n\n\n\n\n\n\n\nNov 15, 2026\n\n\n\n\n\n\n\nShow that ln(p) are linearly independent where p is prime and R is a vector space over Q\n\n\n\nLinear Algebra\n\nEasy\n\n\n\n\n\n\n\n\n\n\n\nNov 13, 2026\n\n\n\n\n\n\n\nLA3\n\n\n\nLinear Algebra\n\nHard\n\n\n\n\n\n\n\n\n\n\n\nNov 12, 2026\n\n\n\n\n\n\n\nProve that distributation function is right continuous\n\n\n\nProbability\n\nmedium\n\n\n\n\n\n\n\n\n\n\n\nNov 12, 2026\n\n\n\n\n\n\n\nNo vector space R over Z/2Z\n\n\n\nLinear Algebra\n\n\n\n\n\n\n\n\n\n\n\nNov 12, 2026\n\n\n\n\n\n\n\nProve that |x-a_i| are linearly independent\n\n\n\nLinear Algebra\n\n\n\n\n\n\n\n\n\n\n\nNov 12, 2026\n\n\n\n\n\n\n\nLA P2\n\n\n\nLinear Algebra\n\nMedium\n\n\n\n\n\n\n\n\n\n\n\nNov 8, 2026\n\n\n\n\n\n\n\nLA1\n\n\n\ninequalities\n\nhard\n\n\n\n\n\n\n\n\n\n\n\nNov 8, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "problems/LA5.html",
@@ -96,6 +96,20 @@
     "title": "Linear Algebra — Midterm Exam",
     "section": "Question 5",
     "text": "Question 5\nLet\n\\[\nG=\\{g_1,\\ldots,g_n\\}\n\\]\nbe a basis for a vector space \\(V\\), where \\(n\\geq 2\\).\nSuppose that\n\\[\nv=\\sum_{k=1}^{n}a_kg_k,\n\\qquad\nw=\\sum_{k=1}^{n}b_kg_k,\n\\]\nwhere \\(v,w\\) are linearly independent.\n(a) Prove that there exist two distinct indices \\(i,j\\) such that\n\\[\n(G\\setminus\\{g_i,g_j\\})\\cup\\{v,w\\}\n\\]\nis a basis for \\(V\\).\n(b) For two distinct indices \\(i,j\\), find a necessary and sufficient condition on the coefficients \\(a_i,a_j,b_i,b_j\\) such that\n\\[\n(G\\setminus\\{g_i,g_j\\})\\cup\\{v,w\\}\n\\]\nforms a basis for \\(V\\)."
+  },
+  {
+    "objectID": "problems/LA7.html",
+    "href": "problems/LA7.html",
+    "title": "Conjugation over the field of Real numbers and complex numbers",
+    "section": "",
+    "text": "Let \\(V = \\mathbb{C}\\) and define \\(T:V \\rightarrow V\\), \\(T(z) = \\bar{z}\\). Is T a linear transformation if our field be \\(\\mathbb{C}\\)? How if the field be \\(\\mathbb{R}\\)?"
+  },
+  {
+    "objectID": "problems/LA7.html#problem",
+    "href": "problems/LA7.html#problem",
+    "title": "Conjugation over the field of Real numbers and complex numbers",
+    "section": "",
+    "text": "Let \\(V = \\mathbb{C}\\) and define \\(T:V \\rightarrow V\\), \\(T(z) = \\bar{z}\\). Is T a linear transformation if our field be \\(\\mathbb{C}\\)? How if the field be \\(\\mathbb{R}\\)?"
   },
   {
     "objectID": "problems/LA3.html",
